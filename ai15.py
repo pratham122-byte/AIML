@@ -1,0 +1,13 @@
+import numpy as np
+X=np.array([1,2,3,4])
+y=np.array([10 , 20,30,40])
+print("feature before reshape(1-D):")
+print(X)
+print("Shape",X.shape)
+X=X.reshape(-1,1)
+print("\nfeature after reshape(2-D):")
+print(X)
+print("shape:",X.shape)
+y=y.reshape(-1,1)
+print("\nLabel after reshape(2-D):")
+print(y)
